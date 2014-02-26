@@ -1,0 +1,432 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+html,
+body {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
+.headerWrap {
+  position: relative;
+  height: 86px;
+  width: 100%;
+}
+.centerWrap {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.sidebarWrap {
+  overflow: hidden;
+  height: 100%;
+  width: 190px;
+  border-right: solid 5px #e6eef8;
+}
+.mainWrap {
+  position: absolute;
+  top: 0;
+  left: 195px;
+  overflow: hidden;
+  height: 100%;
+}
+.mainpage {
+  position: relative;
+  overflow: hidden;
+  min-width: 450px;
+  width: 100%;
+  height: 100%;
+  zoom: 1;
+  font: 12px/1.5 'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif, 宋体;
+}
+.mainpage .layout-panel-north,
+.mainpage .layout-panel-north .panel-body {
+  overflow: visible;
+}
+.mainpage #header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #1666b7 url("img/header_background.png") repeat-x 0px -26px;
+}
+.mainpage #header .top {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.mainpage #header .top h1 {
+  position: relative;
+  overflow: hidden;
+  padding: 1px 15px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+  width: 100%;
+}
+.mainpage #header .top .item {
+  position: absolute;
+  left: 300px;
+  top: 0px;
+}
+.mainpage #header .top .item h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 5px 0 0;
+  margin: 0;
+}
+.mainpage #header .top .item .change a {
+  color: #8FACF6;
+  text-decoration: none;
+}
+.mainpage #header .top .dock {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 2px 5px;
+}
+.mainpage #header .top .dock a {
+  color: #000000;
+  text-decoration: none;
+}
+.mainpage #header .top .dock a:hover {
+  color: #0000FF;
+  text-decoration: underline;
+}
+.mainpage #header .nav {
+  position: absolute;
+  overflow: hidden;
+  top: 52px;
+  width: 100%;
+  height: 34px;
+  bottom: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.mainpage #header .nav ul {
+  margin: 0 0 0 4px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  height: 30px;
+  width: 100%;
+  max-width: 1800px;
+}
+.mainpage #header .nav ul li {
+  position: relative;
+  float: left;
+  list-style-type: none;
+  height: 30px;
+  line-height: 30px;
+  background: #E4EFFF;
+  width: 9.1%;
+}
+.mainpage #header .nav ul li a {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-width: 1px 1px 0;
+  border-style: solid;
+  border-color: #9BA8B6;
+  line-height: 29px;
+  height: 29px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 10px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+.mainpage #header .nav ul li a:hover {
+  color: #1666B7;
+}
+.mainpage #header .nav ul li span {
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+}
+.mainpage #header .nav ul li span:hover {
+  color: #FFFFFF;
+}
+.mainpage #header .nav ul li.selected a {
+  background: #1666B7;
+  color: #FFFFFF;
+}
+.mainpage #header .nav ul li.selected a:hover {
+  color: #000000;
+}
+.mainpage #header .nav ul li.nav_menu {
+  height: 23px;
+  line-height: 23px;
+  width: 26px;
+  margin-top: 7px;
+}
+.mainpage #header .nav ul li.nav_menu a {
+  line-height: 22px;
+  height: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+}
+.mainpage .changePanel {
+  display: none;
+  position: absolute;
+  overflow-x: hidden;
+  width: 200px;
+  z-index: 4;
+  background: #FFFFFF;
+  border: 1px solid #9BA8B6;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.mainpage .changePanel #changeFocus {
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+  position: absolute;
+  top: -1px;
+  left: -4px;
+}
+.mainpage .changePanel .title {
+  background: #D9E4ED;
+  *zoom: 1;
+}
+.mainpage .changePanel .title:before,
+.mainpage .changePanel .title:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mainpage .changePanel .title:after {
+  clear: both;
+}
+.mainpage .changePanel .title span {
+  float: right;
+  padding: 0 5px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.mainpage .changePanel ul {
+  width: 100%;
+}
+.mainpage .changePanel ul li {
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.mainpage .changePanel ul li span {
+  padding-left: 10px;
+}
+.mainpage .changePanel ul li.hover,
+.mainpage .changePanel ul li:hover {
+  background: #5D9BD0;
+  color: #FFFFFF;
+}
+.mainpage .menupanel {
+  position: absolute;
+  overflow-x: hidden;
+  width: 160px;
+  z-index: 10;
+  background: #FFFFFF;
+  border: 1px solid #9BA8B6;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 2px 0px;
+  display: none;
+}
+.mainpage .menupanel #menuFocus {
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+  position: absolute;
+  top: -1px;
+  left: -4px;
+}
+.mainpage .menupanel .item {
+  padding: 3px 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  height: 27px;
+  width: 148px;
+  background: no-repeat 3px 8px;
+}
+.mainpage .menupanel .item .text {
+  padding-left: 16px;
+  height: 27px;
+  line-height: 27px;
+  font-size: 12px;
+  text-align: center;
+}
+.mainpage .menupanel .item a {
+  position: absolute;
+  padding: 3px 0;
+  color: #000000;
+  height: 27px;
+  width: 12px;
+  line-height: 29px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  right: 5px;
+  top: 0px;
+  z-index: 2;
+}
+.mainpage .menupanel .item a:hover {
+  color: #cccccc;
+}
+.mainpage .menupanel .item:hover,
+.mainpage .menupanel .item.hover {
+  background: #1666b7 no-repeat left 8px;
+}
+.mainpage .menupanel .item.close-all {
+  background-image: url("img/close.gif");
+}
+.mainpage .menupanel .item.more {
+  background: no-repeat 5px 8px;
+  background-image: url("img/arrowdowndis.gif");
+}
+.mainpage .menupanel .item.more:hover {
+  background: no-repeat 5px 8px;
+  background-image: url("img/arrowdowndis.gif");
+}
+.mainpage .menupanel .item.selected {
+  background-image: url("img/approve.gif");
+}
+.mainpage .menupanel .split {
+  height: 1px;
+  background: #9BA8B6;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.mainpage #main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.mainpage #main .hide {
+  display: none;
+}
+.mainpage #main .content_item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.mainpage #main .content_item iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-width: 0px;
+}
+.mainpage #sidebar {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  background: #F7F7F7;
+}
+.mainpage #sidebar .sidebarTitle {
+  background: #E4EEFF;
+  border-bottom: solid 1px #95B8E7;
+  padding: 5px 10px;
+}
+.mainpage #sidebar .sidebarTitle span {
+  color: #0E2D5F;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+}
+.mainpage #sidebar .top {
+  font-size: 16px;
+}
+.mainpage #sidebar .top .item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  cursor: pointer;
+  *zoom: 1;
+}
+.mainpage #sidebar .top .item:before,
+.mainpage #sidebar .top .item:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.mainpage #sidebar .top .item:after {
+  clear: both;
+}
+.mainpage #sidebar .top .item.hover,
+.mainpage #sidebar .top .item:hover {
+  background: #EEEEEE;
+}
+.mainpage #sidebar .top .item span.sp {
+  padding-left: 8px;
+}
+.mainpage #sidebar .top .item .text {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+.mainpage #sidebar .top .hide {
+  display: none;
+}
+.mainpage #sidebar .top .title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.mainpage #sidebar .top .title .text {
+  background: url("img/arrowrightdis.gif") no-repeat 4px center;
+}
+.mainpage #sidebar .top .title.open .text {
+  background: url("img/arrowdowndis.gif") no-repeat 4px center;
+}
+.mainpage #sidebar .top .title2 .text {
+  background: url("img/plus.gif") no-repeat 6px center;
+}
+.mainpage #sidebar .top .title2.open2 .text {
+  background: url("img/minus.gif") no-repeat 6px center;
+}
+.mainpage #sidebar.hover,
+.mainpage #sidebar:hover {
+  overflow-y: auto;
+}
