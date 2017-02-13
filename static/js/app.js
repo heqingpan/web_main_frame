@@ -352,6 +352,7 @@ function initMain(){
 	});
 
 	$(".mainWrap").width($("body").width()-$(".sidebarWrap").outerWidth());
+	$(".centerWrap").height($("body").height()-$(".headerWrap").outerHeight());
 
 }
 
@@ -361,5 +362,6 @@ $(window).resize(function(e){
 	var $This = $(this);
 	//alert("width:"+$This.width()+"height:"+$This.height());
 	$(".mainWrap").width($("body").width()-$(".sidebarWrap").outerWidth());
+	$(".centerWrap").height($("body").height()-$(".headerWrap").outerHeight());
 });
 
